@@ -236,6 +236,7 @@ body {
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -280,6 +281,7 @@ body {
 }
 
 .select-quantity {
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
