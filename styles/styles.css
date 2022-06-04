@@ -18,7 +18,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;;
+  color: #333333;
   background-color: #E5E5E5;
 }
 
@@ -29,7 +29,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-  background-color: #82B3D3;;
+  background-color: #82B3D3;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -38,7 +38,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #000000;
-  background-color: #FFFFFF;;
+  background-color: #FFFFFF;
 }
 
 .navigation-link {
@@ -98,7 +98,7 @@ body {
 
 .advantages div {
   color: #FFFFFF;
-  background-color: #82B3D3;;
+  background-color: #82B3D3;
 }
 
 .advantages-item-include {
@@ -255,7 +255,7 @@ body {
   background-color: #756157;
 }
 
-.product-card-item:nth-of-type(3) .product-card-button {
+.product-card-button-villas {
   background-color: #7DB54F;
 }
 
@@ -277,7 +277,7 @@ body {
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;;
+  background-color: #F2F2F2;
 }
 
 .select-quantity {
