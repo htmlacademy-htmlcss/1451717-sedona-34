@@ -68,7 +68,7 @@ body {
   width: 520px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  /*list-style: none;*/
 }
 
 .navigation-user {
@@ -298,8 +298,7 @@ body {
   align-items: center;
   width: 1060px;
   min-height: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .footer-contacts-phone {
@@ -313,10 +312,17 @@ body {
 }
 
 .main-inner {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
   background-color: #FFFFFF;
 }
 
 .filter-block  {
+  display: flex;
+  flex-direction: column;
+  min-height: 403px;
   background-image: url("../images/background-filter.jpg");
   background-size: 1200px 403px;
   background-repeat: no-repeat;
@@ -324,19 +330,70 @@ body {
   color: #FFFFFF;
 }
 
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  margin-left: 70px;
+}
+
 .inner-header-title {
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #000000;
+  color: #FFFFFF;
 }
 
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
+  /* list-style: none; */
   color: #FFFFFF;
 }
 
 .breadcrumbs-link {
   color: inherit;
+}
+
+.catalog-filter-form {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.catalog-filter-left {
+  display: flex;
+  width: 366px;
+}
+
+.catalog-filter-infrastructure {
+  display: flex;
+  flex-direction: column;
+  width: 151;
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
+}
+
+.catalog-filter-housing {
+  display: flex;
+  flex-direction: column;
+  width: 145px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-filter-right {
+  display: flex;
+  width: 519px;
 }
 
 .catalog-filter-title {
@@ -357,6 +414,12 @@ body {
   outline: none;
 }
 
+.sorting {
+  display: flex;
+  width: 1057px;
+  margin-left: 72px;
+}
+
 .catalog-sorting-total {
   font-weight: 700;
   font-size: 30px;
@@ -371,6 +434,14 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.product-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1056px;
+  margin: 0;
+  margin-left: 73px;
 }
 
 .product-card-link {
@@ -393,6 +464,12 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.pagination-block {
+  display: flex;
+  width: 1056px;
+  margin-left: 72px;
 }
 
 .pagination-link {
