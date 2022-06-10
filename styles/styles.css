@@ -65,23 +65,33 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 520px;
   margin: 0;
   padding: 0;
-  /*list-style: none;*/
+  list-style-type: none;
 }
 
 .navigation-user {
-  max-width: 300px;
+  display: flex;
+  justify-content: end;
+  width: 300px;
   margin-left: auto;
   margin-right: 70px;
 }
 
 .navigation-link {
+  display: block;
   font-weight: 700;
   text-transform: capitalize;
   color: inherit;
   text-decoration: none;
+  padding: 20px 17px;
+}
+.navigation-user .navigation-item {
+  min-width: 42px;
+  min-height: 65px;
 }
 
 .navigation-item .button {
@@ -176,7 +186,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .advantages-number {
@@ -282,6 +291,15 @@ body {
   line-height: 26px;
 }
 
+.subscription-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-form-email {
+  margin: 0;
+}
+
 .subscription-button {
   font-size: 20px;
   line-height: 36px;
@@ -299,6 +317,22 @@ body {
   width: 1060px;
   min-height: 60px;
   margin: 0 auto;
+  margin-top: 30px;
+}
+
+.footer-socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 144px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-socials-item {
+  width: 48px;
+  height: 40px;
+  margin-bottom: 5px;
 }
 
 .footer-contacts-phone {
@@ -335,21 +369,29 @@ body {
   flex-direction: column;
   width: 1060px;
   margin-left: 70px;
+  margin-top: 35px;
 }
 
 .inner-header-title {
-  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-bottom: 10px;
   color: #FFFFFF;
 }
 
 .breadcrumbs {
+  display: flex;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
-  /* list-style: none; */
+  list-style-type: none;
   color: #FFFFFF;
+}
+
+.breadcrumbs-item {
+  margin-right: 10px;
 }
 
 .breadcrumbs-link {
@@ -393,7 +435,14 @@ body {
 
 .catalog-filter-right {
   display: flex;
+  justify-content: flex-end;
   width: 519px;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .catalog-filter-title {
@@ -417,23 +466,47 @@ body {
 .sorting {
   display: flex;
   width: 1057px;
+  margin-top: 55px;
   margin-left: 72px;
+  margin-bottom: 56px;
 }
 
 .catalog-sorting-total {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  margin: 0;
+  margin-right: 191px;
   text-transform: uppercase;
   color: #000000;
 }
 
 .select-control {
+  width: 290px;
+  margin-right: 78px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.buttons-sorting {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.button-sorting {
+  box-sizing: border-box;
+  min-width: 48px;
+  min-height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-dark {
+  border: 2px solid #000000;
 }
 
 .product-card-list {
@@ -442,6 +515,9 @@ body {
   width: 1056px;
   margin: 0;
   margin-left: 73px;
+  margin-bottom: 96px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .product-card-link {
@@ -470,24 +546,51 @@ body {
   display: flex;
   width: 1056px;
   margin-left: 72px;
+  list-style-type: none;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  width: 400px;
+  margin: 0;
+  margin-right: 270px;
+  padding: 0;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  justify-items: center;
+  text-align: center;
+  width: 60px;
+  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
+  border: 1px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;;
+}
+
+.catalog-sorting-results {
+  margin-right: 51px;
 }
 
 .select-quantity {
+  width: 160px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -496,6 +599,14 @@ body {
 }
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
