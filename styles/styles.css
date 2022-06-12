@@ -535,6 +535,10 @@ body {
   grid-column: 1 / -1;
 }
 
+.product-card-img {
+  object-fit: contain;
+}
+
 .product-card-title {
   grid-column: 1 / -1;
   margin: 0;
