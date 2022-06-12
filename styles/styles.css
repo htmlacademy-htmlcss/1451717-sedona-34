@@ -510,8 +510,9 @@ body {
 }
 
 .product-card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
   width: 1056px;
   margin: 0;
   margin-left: 73px;
@@ -520,12 +521,36 @@ body {
   list-style-type: none;
 }
 
+.product-card-item {
+  display: grid;
+  gap: 16px 20px;
+  grid-template-rows: 211px min-content min-content min-content min-content;
+  grid-template-columns: 140px 140px;
+  width: 340px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .product-card-link {
+  grid-column: 1 / -1;
+}
+
+.product-card-title {
+  grid-column: 1 / -1;
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-decoration: none;
   color: #000000;
+}
+
+.product-card-hostel {
+  margin: 0;
+}
+
+.product-card-price {
+  margin: 0;
 }
 
 .product-card-more {
