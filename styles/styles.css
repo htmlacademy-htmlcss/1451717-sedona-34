@@ -561,7 +561,7 @@ body {
 }
 
 .footer-logo-img:focus {
-  column-fill: #756157;
+  fill: #756157;
 }
 
 .footer-logo-img:active {
@@ -576,7 +576,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  /*display: none; /* Отключает модальное окно */
+  display: none; /* Отключает модальное окно */
 }
 
 .modal {
@@ -980,7 +980,7 @@ body {
 .catalog-filter-infrastructure {
   display: flex;
   flex-direction: column;
-  width: 151;
+  width: 151px;
   margin: 0;
   margin-right: 70px;
   padding: 0;
