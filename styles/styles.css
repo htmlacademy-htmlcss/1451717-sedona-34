@@ -306,7 +306,12 @@ body {
 }
 
 .advantages-text {
+  width: 230px;
   margin: 0;
+}
+
+.text-live {
+  width: 190px;
 }
 
 .advantages-list {
@@ -677,9 +682,14 @@ body {
   line-height: 21px;
 }
 
+.calendar-position {
+  position: relative;
+}
+
 .calendar-button {
   position: absolute;
-  left: 610px;
+  left: 541px;
+  top: 17px;
   padding: 0;
   border: 0;
   background-color: transparent;
